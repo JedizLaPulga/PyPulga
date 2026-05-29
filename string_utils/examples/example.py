@@ -1,11 +1,11 @@
 import sys
 import os
-# Add the parent directory to the path so we can import the built module directly for testing
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..')))
 
 try:
-    from pulgapy.container_two import multiply
-    result = multiply(6, 7)
+    from pulgapy.string_utils import reverse_string
+    print("Testing string_utils (Reversing 'Hello from Rust!'):")
+    result = reverse_string("Hello from Rust!")
     print(f"Result from Rust: {result}")
 except ImportError as e:
     print(f"Error: {e}")

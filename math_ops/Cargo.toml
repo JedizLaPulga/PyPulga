@@ -1,10 +1,10 @@
 [package]
-name = "container_one"
+name = "math_ops"
 version = "0.1.0"
 edition = "2021"
 
 [lib]
-name = "container_one"
+name = "math_ops"
 crate-type = ["cdylib"]
 
 [dependencies]
