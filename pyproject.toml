@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools-rust>=1.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pulgapy"
+version = "0.1.0"
+description = "A modular Rust-to-Python library"
+authors = [{ name = "Joel" }]
+requires-python = ">=3.8"
+
+[tool.setuptools]
+packages = ["pulgapy", "pulgapy.math_ops", "pulgapy.string_utils"]
